@@ -12,4 +12,3 @@ textareas.forEach(textarea => {
         autoResize(textarea);
     })
 });
-
