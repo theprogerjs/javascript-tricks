@@ -7,7 +7,6 @@ const autoResize = (textarea) => {
 
 textareas.forEach(textarea => {
     autoResize(textarea);
-
     textarea.addEventListener('input', () => {
         autoResize(textarea);
     })

@@ -27,7 +27,6 @@ body {
     padding: 2rem 3rem;
     margin-left: 1rem;
     margin-right: 1rem;
-
 }
 
 .form-label {
@@ -46,7 +45,7 @@ body {
     border-width: 2px 2px 4px;
 }
 
-.form-control {
+textarea.form-control {
     border: transparent;
     flex: 1;
     font-size: 1.3rem;
