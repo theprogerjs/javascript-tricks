@@ -7,7 +7,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-    background-color: #f4f2d7;
+    background: rgb(101,9,11);
+    background: linear-gradient(68deg, rgba(101,9,11,1) 0%, rgba(15,15,17,1) 30%, rgba(15,15,17,1) 78%, rgba(45,4,85,1) 100%);
 }
 
 .wrapper {
@@ -23,7 +24,6 @@ body {
     display: inline-block;
     width: 110px;
     height: 50px;
-
     user-select: none;
 }
 
@@ -40,6 +40,7 @@ body {
     background: #ECECEC;
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25) inset;
 }
+
 .slide .slide--on,
 .slide .slide--off{
     color: #393939;
@@ -61,6 +62,9 @@ body {
     right: 20px;
     opacity: 0.3;
 }
+
+
+
 
 .slide:before {
     position: absolute;
