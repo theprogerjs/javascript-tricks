@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #171A1C;
+}
+
+.wrapper {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-bubble {
+    position: relative;
+    transition: all 700ms;
+    overflow: hidden;
+    z-index: 10;
+    display: inline-block;
+    padding: 0.75rem 1.875rem;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.6;
+    color: #f5f5f5;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    border: 1px solid #F5F5F5;
+    border-radius: 0.3125rem;
+    background-color: transparent;
+    box-shadow: var(0 0.25rem 1.25rem rgba(0, 0, 0, 0.3));
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.button-bubble:hover {
+    color: #171A1C;
+}
+
+span.ripple_outline_effect {
+    background-color: rgba(255, 255, 255, 1);
+    position: absolute;
+    border-radius: 50%;
+    opacity: 1;
+    transform: scale(0);
+    left: -50px;
+    top: -50px;
+    pointer-events: none;
+    transform-origin: center;
+    transition: transform 600ms, opacity 500ms;
+    z-index: -1;   
+}
+
+span.ripple_outline_effect.ripple_animate {
+    opacity: 1;
+    transform: scale(1);
+}
